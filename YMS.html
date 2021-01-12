@@ -18,47 +18,56 @@
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body style="background-color: #f1f1f1">
- <section>
+    <script>
+        AOS.init();
+    </script>
+    <section>
         <div id="opening" class="embed-responsive embed-responsive-16by9">
             <video loop="false" autoplay="autoplay" muted="false" width=100vw height=50vh src="assets/pangolin.mp4">
             </video>
             <!--            <div style="width:100%; background-repeat: no-repeat;fixed; background-size:cover;background-position:center;position:relative;">-->
-           <div style="width:auto; height: auto ;background: rgba(255,255,255,0.4)">
-            <h1 id="title" style="position:absolute;color:#CC7722; font-weight:bold; font-size:400%; transform: translate(20%, -400%); z-index:800;">陽明山，誰的家？</h1>
-            <h2 id="title" style="position:absolute;color:#DEB887; font-weight:800; font-size:200%; transform: translate(20%, -500%); z-index:1000;">遊蕩動物與野生動物衝突的未解難題</h2>
-     </div>
+            <div style="width:auto; height: auto ;background: rgba(255,255,255,0.4)">
+                <h1 id="title" style="position:absolute;color:#CC7722;background: rgba(255,255,255,0.4)  font-weight:bold; font-size:400%; transform: translate(20%, -400%); z-index:800;">陽明山，誰的家？</h1>
+                <h2 id="title" style="position:absolute;color:#DEB887; font-weight:800; font-size:200%; transform: translate(20%, -500%); z-index:1000;">遊蕩動物與野生動物衝突的未解難題</h2>
+            </div>
         </div>
         <!--        </div>-->
-</section>
+    </section>
 
 
 
     <!--   <main class="container" role="main" style="color=#f1f1f1">-->
     <div class="jumbotron" style="background-color:#f1f1f1;height:auto">
-       <audio controls autoplay="autoplay" loop="loop" style="display:none;">
-<source src="assets/lead%20beep.mp3" type="audio/mpeg" />
-</audio>
-        <div class="text">
-            <p>就在研究團隊的人準備吃午餐的時候，接收器收到了戴有發報器的麝香貓在附近活動的信號。因為聲音活躍、位置也不遠，顯示麝香貓在附近活動著，團隊的成員想著吃完午餐再去找也無妨，就關掉了接收器，回到哨口休息。</p>
-            <p>
-                附近傳來了熱鬧的狗吠聲。因為竹子山戰備道附近本來就有居民養狗，團隊的人員也不以為意，小憩了一會。但是在午餐吃完、狗群散掉後，再拿起接收器，卻發現訊號已經停止不動。這隻麝香貓再被找到的時候，已經失去了生命。</p>
-            <p>
-                研究人員把牠帶回給獸醫檢查，發現牠的胃有穿刺傷，很有可能就是狗留下的。</p>
-            <p>
-                這是2013年，台大動物科學技術學系教授朱有田的研究團隊在陽明山國家公園調查麝香貓時發生的插曲。從這時起，研究人員開始特別關注這個國家公園境內，自由活動的這些犬隻對野生動物造成的生存壓力。</p>
-            <p>
-                陽明山國家公園除了有全台唯一的活火山著稱，也蘊含著豐富的自然生態。基隆河和淡水河割開了它與其他陸域的連接，讓陽明山地區的哺乳動物族群不易與其它地方的族群交流。二級保育類的麝香貓在這裡，較其他地方多一些，朱有田就曾在2015年的文獻中提出，這可能是台灣狀況較良好的麝香貓族群之一。其他生活在這裡的中小型哺乳動物還有山羌、山豬、獼猴、穿山甲、鼬獾、白鼻心、麝香貓、食蟹獴、赤腹松鼠和野兔。</p>
-            <p>
-                但是陽明山鄰近都會區、交通便利等特性，不僅是民眾的旅遊勝地，也成為流浪動物的棲息場所，附近有些居民也會讓自己養的狗自由跑動。2019年野生動物專家顏士清統計，陽明山流浪動狗和放養犬（以下通稱自由犬）數量保守估計有298隻，台北市動物保護處則認為有超過500隻。因為流浪狗大多沒有結紮、2019年家犬絕育率也僅達近68%，每年都會不斷新增幼犬，據動保處統計，2020年送進台北市立收容所的近200隻流浪幼犬中，就有100隻來自陽明山。</p>
-            <p>
-                而遊蕩犬貓的增加與聚集，使原本棲息於陽明山的野生動物除了可能遭受流浪動物獵捕、攻擊，也面臨資源與空間的競爭，更因為塞進了更多動物，而暴露在共同傳染病的風險之下。</p>
-        </div>
+        <audio controls autoplay="autoplay" loop="loop" style="display:none;">
+            <source src="assets/lead%20beep.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="text col-8">
+                <p>就在研究團隊的人準備吃午餐的時候，接收器收到了戴有發報器的麝香貓在附近活動的信號。因為聲音活躍、位置也不遠，顯示麝香貓在附近活動著，團隊的成員想著吃完午餐再去找也無妨，就關掉了接收器，回到哨口休息。</p>
+                <p>
+                    附近傳來了熱鬧的狗吠聲。因為竹子山戰備道附近本來就有居民養狗，團隊的人員也不以為意，小憩了一會。但是在午餐吃完、狗群散掉後，再拿起接收器，卻發現訊號已經停止不動。這隻麝香貓再被找到的時候，已經失去了生命。</p>
+                <p>
+                    研究人員把牠帶回給獸醫檢查，發現牠的胃有穿刺傷，很有可能就是狗留下的。</p>
 
+                <p>
+                    這是2013年，台大動物科學技術學系教授朱有田的研究團隊在陽明山國家公園調查麝香貓時發生的插曲。從這時起，研究人員開始特別關注這個國家公園境內，自由活動的這些犬隻對野生動物造成的生存壓力。</p>
+                <center><img src="assets/banner.jpg" data-aos="fade-up" style="max-width:100%; display: block;"></center>
+                <p>
+                    陽明山國家公園除了有全台唯一的活火山著稱，也蘊含著豐富的自然生態。基隆河和淡水河割開了它與其他陸域的連接，讓陽明山宛若一座孤島，這裡的哺乳動物族群不易與其它地方的族群交流。二級保育類的麝香貓在這裡，較其他地方多一些，朱有田就曾在2015年的文獻中提出，這可能是台灣狀況較良好的麝香貓族群之一。其他生活在這裡的中小型哺乳動物還有山羌、山豬、獼猴、穿山甲、鼬獾、白鼻心、麝香貓、食蟹獴、赤腹松鼠和野兔。</p>
+                <p>
+                    但是陽明山鄰近都會區、交通便利等特性，不僅是民眾的旅遊勝地，也成為流浪動物的棲息場所，附近有些居民也會讓自己養的狗自由跑動。2019年野生動物專家顏士清統計，陽明山流浪動狗和放養犬（以下通稱自由犬）數量保守估計有298隻，台北市動物保護處則認為有超過500隻。因為流浪狗大多沒有結紮、2019年家犬絕育率也僅達近68%，每年都會不斷新增幼犬，據動保處統計，2020年送進台北市立收容所的近200隻流浪幼犬中，就有100隻來自陽明山。</p>
+                <p>
+                    而遊蕩犬貓的增加與聚集，使原本棲息於陽明山的野生動物除了可能遭受流浪動物獵捕、攻擊，也面臨資源與空間的競爭，更因為塞進了更多動物，而暴露在共同傳染病的風險之下。</p>
+                <div class="col-2"></div>
+            </div>
+        </div>
     </div>
 
     <!-- navigation bar -->
@@ -235,7 +244,7 @@
     <!-- 以上是報導者版型套用，勿動 -->
 
     <!--以下為Part2問題成因-->
-    <div class="jumbotron" id="area02" style="background-image: url(assets/DSCF7364.JPG); background-size: cover; background-position: center; height:auto; background-attachment: fixed">
+    <div id="area02" style="background-image: url(assets/DSCF7364.JPG); background-size: cover; background-position: center; height:auto; background-attachment: fixed">
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <h2 style="width:aito;height:50vh;font-weight:bold; color:rgba(255,255,255,0.4); padding: 50px">問題成因</h2>
@@ -253,9 +262,8 @@
             </div>
         </div>
     </div>
-
-
-    <div class="jumbotron" style="background-color: #f1f1f1; height: auto">
+    <div class="jomborom">
+        <br><br>
         <div class="text" style="margin-left: 20%;margin-right: 20%">
             <h4 class="title2" style="color: #4e403a">【難題二】禁止餵食有用嗎？執法、TNvR執行遇困境</h4>
             <br>
@@ -272,73 +280,74 @@
         <img src="assets/DSCF7026.JPG" style="margin: 0 auto; display: block; height: 50vh; height: 100%; width: 70vw;">
         <br>
         <p style="display: block; color: #3C3C3C;text-align: center; font-size: small">餵食容易使遊蕩動物群體聚集、生長，也可能因此引來野生動物，增加其被攻擊的風險。（曾以寧／攝影）</p>
-
-
-        <div class="jumbotron" style="background-color: #f1f1f1; height: auto">
-            <div class="text" style="margin-left: 20%;margin-right: 20%">
-                <h4 class="title2" style="color: #4e403a">【難題三】有愛心卻沒責任：餵養者觀念難改</h4>
-                <br>
-                <p>「流浪動物會形成這麼大的族群，正是因為有餵食者固定在餵食，使牠們的食物來源遠大於從自然環境中得到的食物。」動保處動物救援隊代理隊長賴佳倩坦言，餵養是造成流浪動物數量居高不下的原因之一。進行TNvR時，與餵養者的溝通、合作不良也一直是難解的問題。</p>
-                <p>流浪動物的誘捕與餵食必須互相搭配，誘捕者會在特定地點架設圍籬或誘捕龍，並將食物置於籠內，養成犬貓在籠內進食的習慣以利捕捉。然而，部份愛爸愛媽餵食者仍會將食物放至籠外，導致犬貓不願進入籠中，增加誘捕難度。</p>
-                <br>
-            </div>
-            <img src="assets/DSCF5612.JPG" style="margin: 0 auto; display: block; width: 70vw;">
+        <br><br>
+        <div class="text" style="margin-left: 20%;margin-right: 20%">
+            <h4 class="title2" style="color: #4e403a">【難題三】有愛心卻沒責任：餵養者觀念難改</h4>
             <br>
-            <p style="display: block; color: #3C3C3C;text-align: center; font-size: small">協助TNvR的團體將食物放在圍籠中引誘流浪狗進入。然而，部分餵食者仍慣於將食物隨意丟棄，大副提升了誘捕難度（曾以寧／攝影）。</p>
+            <p>「流浪動物會形成這麼大的族群，正是因為有餵食者固定在餵食，使牠們的食物來源遠大於從自然環境中得到的食物。」動保處動物救援隊代理隊長賴佳倩坦言，餵養是造成流浪動物數量居高不下的原因之一。進行TNvR時，與餵養者的溝通、合作不良也一直是難解的問題。</p>
+            <p>流浪動物的誘捕與餵食必須互相搭配，誘捕者會在特定地點架設圍籬或誘捕龍，並將食物置於籠內，養成犬貓在籠內進食的習慣以利捕捉。然而，部份愛爸愛媽餵食者仍會將食物放至籠外，導致犬貓不願進入籠中，增加誘捕難度。</p>
             <br>
-            <br>
-            <div class="text" style="margin-left: 28%;margin-right: 28%">
-                <b>「他們怕動物不進去吃，就在外面餵，我們問他都說沒有，但你看食物底下墊的都是新鮮葉子，就知道那是剛才放的。」</b>
-            </div>
-            <br>
-            <div class="text" style="margin-left: 20%;margin-right: 20%">
-                <p>顏士清的研究助理高銘多次參與陽明山的捕犬任務，對於餵食者觀念難改的困境特別有感，長期與動保處合作執行TNvR的流浪天使護佑生命協會理事長李美玲也說，陽明山的浪犬非常難誘捕，原因就是餵養者太多，且經常將食物隨意放置，「他們高興怎麼丟就怎麼丟，」而且餵食者大多習慣用廚餘、骨頭餵食，對狗來說太油太鹹，卻已經養壞牠們的胃口，「變成你準備的食物必須比那些東西還好吃。」無法順利誘捕、進行節育，自然難以有效控制流浪動物群體的數量。</p>
-                <p>除了餵養，有些愛爸愛媽甚至會在流浪動物好不容易進入收容所後，再把牠們領出來原放，眼看先前的努力幾乎前功盡棄，動保團體十分困擾，顏士清與愛爸愛媽溝通後發現，他們認為收容所環境不佳，不希望動物被關在裡面，但領回後又無法負擔照顧責任，卻沒想到，這種有愛心卻沒有責任的做法，就如同任意餵食，讓陽明山的流浪動物問題，遲遲等不到被解決的那一天。</p>
-            </div>
-            <br>
-            <br>
-            <div class="text" style="margin-left: 20%;margin-right: 20%">
-                <h4 class="title2" style="color: #4e403a">【難題四】零安樂之後 收容所如排水孔賭塞的水槽</h4>
-                <br>
-                <p>但是在抓到流浪狗之後，之所以只能結紮後又帶到原地野放，是因為2017年全台公立收容所全面施行的零安樂政策。</p>
-                <p>流浪動物進了收容所後沒有了最直覺的退場機制，民眾領養量跟不上狗的繁殖速度，只出不進的收容所如排水孔賭塞的水槽。雖然近年已經改成只收問題行為、特別需要醫療的狗，或是幼犬，各地收容所仍然嚴重滿載。不僅收容所內的狗常有因為關太密集而神經緊張的問題，外溢的水份，也就成了街頭的流浪狗。</p>
-                <p>而這些看似自由自在的流浪狗，實際上有一半都活不過第一年。顏士清調查後發現，陽明山地區的流浪狗每年留存率僅約44%，但是母狗只要撐過頭幾個月，就有可能長久地活下來、一胎接著一胎生，而且越來越難抓。也有在都會地區進行TNvR的李美玲就很有感：「牠們從小就不親人，不像家犬、放養犬或棄養的，牠們有跟人類社會接觸過，會搖尾巴，表示友善⋯⋯陽明山的狗警戒心比較強，超難抓，我們抓平地的狗抓好快，一個禮拜內就解決四五隻，大概有四隻都是母犬，陽明山就好難抓。」</p>
-                <p>另一方面，顏士清的調查也發現，每年平均約有7%的狗有斷肢、16%有皮膚病，許多浪犬的血球指數也無法達到健康標準。但即使過得不好，浪犬仍在野外自然繁殖。以前也曾是個單純的餵養人的李美玲表示，自己也是觀察到流浪動物的惡性循環，才開始投入結紮工作。</p>
-                <br>
-            </div>
-            <img src="assets/DSCF5767.JPG" style="margin: 0 auto; display: block; width: 70vw;">
-            <br>
-            <p style="display: block; color: #3C3C3C;text-align: center; font-size: small">母狗只要撐過頭幾個月就有可能多次繁殖，據李美玲表示。曾經觀察到圖中小狗的媽媽今年脹奶兩次，應至少生了兩胎。（曾以寧／攝影）。</p>
-            <br>
-            <br>
-            <div class="text" style="margin-left: 28%;margin-right: 28%">
-                <b>「其實你看久了，就會覺得牠們這樣在外面明明過得不好、卻又一直生，也不是辦法。」</b>
-            </div>
-            <br>
-            <div class="text" style="margin-left: 20%;margin-right: 20%">
-                <p>除了領養觀念，飼主責任不足也是源頭街頭遊蕩犬源頭之一。根據顏士清長期查訪陽明山地區居民養狗的習慣發現，會放養狗、不限制其行動的飼主，通常也不會去做寵物登記、打疫苗或是結紮。因此不僅寵物本身暴露在傳染病的風險之下，也成為「防疫破口」，提升所有野外動物的疾病風險。</p>
-                <p>放養的家犬看似夜晚會回家休息、也會定時在家吃飯，但是在野外活動範圍仍有203個足球場大。而沒有結紮的家犬，也就有可能與其他流浪犬交配、生下小狗，加入這個一直生的惡性循環，</p>
-            </div>
         </div>
+        <img src="assets/DSCF5612.JPG" style="margin: 0 auto; display: block; width: 70vw;">
+        <br>
+        <p style="display: block; color: #3C3C3C;text-align: center; font-size: small">協助TNvR的團體將食物放在圍籠中引誘流浪狗進入。然而，部分餵食者仍慣於將食物隨意丟棄，大副提升了誘捕難度（曾以寧／攝影）。</p>
+        <br>
+        <br>
+        <div class="text" style="margin-left: 28%;margin-right: 28%">
+            <b>「他們怕動物不進去吃，就在外面餵，我們問他都說沒有，但你看食物底下墊的都是新鮮葉子，就知道那是剛才放的。」</b>
+        </div>
+        <br>
+        <div class="text" style="margin-left: 20%;margin-right: 20%">
+            <p>顏士清的研究助理高銘多次參與陽明山的捕犬任務，對於餵食者觀念難改的困境特別有感，長期與動保處合作執行TNvR的流浪天使護佑生命協會理事長李美玲也說，陽明山的浪犬非常難誘捕，原因就是餵養者太多，且經常將食物隨意放置，「他們高興怎麼丟就怎麼丟，」而且餵食者大多習慣用廚餘、骨頭餵食，對狗來說太油太鹹，卻已經養壞牠們的胃口，「變成你準備的食物必須比那些東西還好吃。」無法順利誘捕、進行節育，自然難以有效控制流浪動物群體的數量。</p>
+            <p>除了餵養，有些愛爸愛媽甚至會在流浪動物好不容易進入收容所後，再把牠們領出來原放，眼看先前的努力幾乎前功盡棄，動保團體十分困擾，顏士清與愛爸愛媽溝通後發現，他們認為收容所環境不佳，不希望動物被關在裡面，但領回後又無法負擔照顧責任，卻沒想到，這種有愛心卻沒有責任的做法，就如同任意餵食，讓陽明山的流浪動物問題，遲遲等不到被解決的那一天。</p>
+        </div>
+        <br>
+        <br>
+        <div class="text" style="margin-left: 20%;margin-right: 20%">
+            <h4 class="title2" style="color: #4e403a">【難題四】零安樂之後 收容所如排水孔賭塞的水槽</h4>
+            <br>
+            <p>但是在抓到流浪狗之後，之所以只能結紮後又帶到原地野放，是因為2017年全台公立收容所全面施行的零安樂政策。</p>
+            <p>流浪動物進了收容所後沒有了最直覺的退場機制，民眾領養量跟不上狗的繁殖速度，只出不進的收容所如排水孔賭塞的水槽。雖然近年已經改成只收問題行為、特別需要醫療的狗，或是幼犬，各地收容所仍然嚴重滿載。不僅收容所內的狗常有因為關太密集而神經緊張的問題，外溢的水份，也就成了街頭的流浪狗。</p>
+            <p>而這些看似自由自在的流浪狗，實際上有一半都活不過第一年。顏士清調查後發現，陽明山地區的流浪狗每年留存率僅約44%，但是母狗只要撐過頭幾個月，就有可能長久地活下來、一胎接著一胎生，而且越來越難抓。也有在都會地區進行TNvR的李美玲就很有感：「牠們從小就不親人，不像家犬、放養犬或棄養的，牠們有跟人類社會接觸過，會搖尾巴，表示友善⋯⋯陽明山的狗警戒心比較強，超難抓，我們抓平地的狗抓好快，一個禮拜內就解決四五隻，大概有四隻都是母犬，陽明山就好難抓。」</p>
+            <p>另一方面，顏士清的調查也發現，每年平均約有7%的狗有斷肢、16%有皮膚病，許多浪犬的血球指數也無法達到健康標準。但即使過得不好，浪犬仍在野外自然繁殖。以前也曾是個單純的餵養人的李美玲表示，自己也是觀察到流浪動物的惡性循環，才開始投入結紮工作。</p>
+            <br>
+        </div>
+        <img src="assets/DSCF5767.JPG" style="margin: 0 auto; display: block; width: 70vw;">
+        <br>
+        <p style="display: block; color: #3C3C3C;text-align: center; font-size: small">母狗只要撐過頭幾個月就有可能多次繁殖，據李美玲表示。曾經觀察到圖中小狗的媽媽今年脹奶兩次，應至少生了兩胎。（曾以寧／攝影）。</p>
+        <br>
+        <br>
+        
+        <div class="text" style="margin-left: 20%;margin-right: 20%">
+            <p>除了領養觀念，飼主責任不足也是源頭街頭遊蕩犬源頭之一。根據顏士清長期查訪陽明山地區居民養狗的習慣發現，會放養狗、不限制其行動的飼主，通常也不會去做寵物登記、打疫苗或是結紮。因此不僅寵物本身暴露在傳染病的風險之下，也成為「防疫破口」，提升所有野外動物的疾病風險。</p>
+            <p>放養的家犬看似夜晚會回家休息、也會定時在家吃飯，但是在野外活動範圍仍有203個足球場大。而沒有結紮的家犬，也就有可能與其他流浪犬交配、生下小狗，加入這個一直生的惡性循環，</p>
+        </div>
+        <div class="text" style="margin-left: 28%;margin-right: 28%">
+            <b>「其實你看久了，就會覺得牠們這樣在外面明明過得不好、卻又一直生，也不是辦法。」</b>
+        </div>
+        <br>
     </div>
+
 
     <!-- Part2 結束 -->
 
     <!-- Part3 以寧負責寫 -->
     <!-- 來源 https://codepen.io/team/keyframers/pen/ZMRMEw -->
-    <div class="jumbotron" id="area03"  style="background-color:#f1f1f1;height:auto">
+    <!--    <div class="jumbotron" id="area03" style="background-color:#f1f1f1;height:auto">-->
+    <div id="area03">
         <script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
         <section class="content-section" data-scroll>
             <figure class="figure"><img src="assets/2puppy_2.jpg" style="width: 100% " /></figure>
             <div class="content">
                 <h2 class="heading"></h2>
                 <header class="header">
-                    <div class="subheading">目前解方</div>
-                    <h2 class="heading">絕育控制族群</h2>
+                    <div class="subheading">絕育控制族群</div>
+                    <h2 class="heading">目前解方</h2>
                 </header>
                 <p class="paragraph" style="padding: 30px">
-                    由於民眾偏好品種犬、又覺得小狗比較好教，但是因為陽明山地區抓到的多為最不討喜的黑色米克斯，長年生活在野外的牠們也不親人，收容、送養都成了很大的問題。<br><br>
+                    由於台北市立收容所從零安樂後就像被堵住的水槽，加上民眾偏好品種犬、又覺得小狗比較好教，收容所演變成只能作為收容有追車咬人等問題行為成犬、轉介還有人願意收養的幼犬的場所。但是因為陽明山地區抓到的多為最不討喜的黑色米克斯，長年生活在野外的牠們也不親人，收容、送養都成了很大的問題。<br><br>
                     目前唯一可以控制野外自由犬族群的方式，只有積極增加絕育率。
+
                 </p>
             </div>
         </section>
@@ -385,20 +394,7 @@
             </div>
         </section>
     </div>
-    <script id="data-scroll">
-        console.clear();
 
-        ScrollOut({
-            cssProps: {
-                visibleY: true,
-                viewportY: true
-            }
-        });
-
-        Splitting({
-            target: ".heading"
-        });
-    </script>
     <!-- Part3 全部結束-->
 
 
@@ -415,29 +411,26 @@
 
 
     <!-- Part4 -->
-
-    <div id="aera04" class="embed-responsive embed-responsive-16by9">
-        <video loop="false" autoplay="autoplay" muted="false" width=100vw src="assets/cave_15s.mp4">
-        </video>
-
-        <div class="text11">
-            <h1 style="color:azure;text-align: center; font-size: 65px; margin-right: 37%; padding-bottom: 20%">回家的最後一哩路</h1>
-            <br>
-            <br>
-            <p style="margin-left: 10%; margin-right: 45%">除了繼續合作執行TNvR，各方也提出未來規劃和其他可能解方，來緩解目前的窘境，盼陽明山的流浪動物問題，能在不遠處看見希望的曙光，而動物們也能找到屬於牠們的棲身之所。</p>
+    <section>
+        <div id="aera04" class="embed-responsive embed-responsive-16by9">
+            <video loop="false" autoplay="autoplay" muted="false" style="width:auto" src="assets/cave_15s.mp4">
+            </video>
+            <div class="text11" style="background-color: rgba(62,72,81, 0.5);">
+                <h1 style="color:azure;text-align: center; font-size: 65px;margin-top:-10%; margin-right: 37%; ">回家的最後一哩路</h1>
+                <p style="margin-left: 10%; margin-right: 45%">除了繼續合作執行TNvR，各方也提出未來規劃和其他可能解方，來緩解目前的窘境，盼陽明山的流浪動物問題，能在不遠處看見希望的曙光，而動物們也能找到屬於牠們的棲身之所。</p>
+            </div>
         </div>
-    </div>
 
+    </section>
 
-
-    <div class="jumbotron" id="area04" style="background-color: #f1f1f1; height: auto">
+    <div id="area04" style="background-color: #f1f1f1; height: auto; padding-top: 5%">
         <div class="row" ; style="animation: slide">
             <div class="col-sm-1 col-md-1 col-lg-1"></div>
 
             <img class="col-sm-3 col-md-3 col-lg-3" src="assets/yenS-01.png" data-aos="fade-down" style="height: 60%; width: 60%;display: block;">
 
             <div class="col-sm-6 col-md-6 col-lg-6 text" style="margin-top: 3%">
-                <h2 style="font-size:25px;font-weight: bold;color:#4e403a">專家：流浪動物園內淨空、園外安置</h2>
+                <h2 style="font-size:25px;font-weight:bold;color:#4e403a">專家：流浪動物園內淨空、園外安置</h2>
                 <br>
                 <b>「只要有（遊蕩）狗在那裡，牠造成的影響就會一直存在。」</b>
                 <br>
@@ -466,14 +459,11 @@
             <div class="col-sm-2 col-md-2 col-lg-2"></div>
 
         </div>
-
         <br>
         <br>
         <br>
         <br>
         <br>
-
-
         <!--                北市動保處-->
         <div class="row" ; style="animation: slide">
             <div class="col-sm-1 col-md-1 col-lg-1"></div>
@@ -492,12 +482,10 @@
         </div>
 
     </div>
-
-
     <!--             結尾-->
-    <div class="jumbotron" id="area04" style="background-image: url(assets/DSCF7777.JPG); background-size: cover; height: 700px;background-position: center;opacity: 0.9; background-attachment:fixed;">
+    <div id="area04" style="background-image: url(assets/DSCF7777.JPG); background-size: cover; height: 700px;background-position: center;opacity: 0.9; background-attachment:fixed;">
         <div>
-            <h4 style="color:#F5DEB3;margin-top: 10%; padding-left: 10%">加強飼主生命教育</h4>
+            <h4 style="color:#F5DEB3;margin-top: 5%; padding-top: 5%; padding-left: 10%;font-weight: bold">加強飼主責任教育</h4>
             <br>
             <br>
             <div class="ending">
@@ -506,18 +494,9 @@
                 <p>為了讓TNvR過程順利，動保團體在與餵養者的溝通上，下了不少功夫。針對部分餵養者不願配合TNvR進行，林雅哲認為，持續溝通是必要之務，並得採取寬嚴相濟的方式說服他們，「要讓他們知道，如果你配合，動物就只是被結紮，但如果不配合，那我們只好全面抓光。」</p>
                 <br>
                 <p>但無論執法再怎麼嚴厲、TNvR進行效率再怎麼快速，最重要的，還是飼主的生命與責任教育，唯有改變飼養觀念、杜絕棄養與隨意放養，流浪動物與野生動物才能各自尋得足以安身立命的家。</p>
-
             </div>
-
         </div>
-
-
-
-
-
-
     </div>
-
     <!-- part4 結束 -->
 
 
