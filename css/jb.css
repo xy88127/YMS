@@ -37,6 +37,32 @@
 
 /* 如嫻 */
 
+/* 開場字動畫 */
+h1 {
+  animation: typing 4s steps(35);
+  overflow: hidden;
+  animation-iteration-count: 3;
+  font-size: 30px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid #ffffff;
+  width: 36ch;
+  color: #ffffff;
+  margin-top: 20%;
+  margin-left: 1%;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 35ch;
+  }
+}
+/* 開場字的動畫結束 */
+
 [class*="col-"] {
     /* For mobile: */
     width: 100%;
