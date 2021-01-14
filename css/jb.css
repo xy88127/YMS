@@ -38,7 +38,7 @@
 /* 如嫻 */
 
 /* 開場字動畫 */
-h1 {
+/* h1 {
   animation: typing 4s steps(35);
   overflow: hidden;
   animation-iteration-count: 3;
@@ -51,7 +51,7 @@ h1 {
   color: #ffffff;
   margin-top: 20%;
   margin-left: 1%;
-}
+}*/
 
 @keyframes typing {
   0% {
