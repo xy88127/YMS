@@ -1,41 +1,113 @@
 /*這是單行註解*/
 
+/*整體設定*/
+body{
+  font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+  background: #f1f1f1;  /*環資主網域規定是 #eee*/
+    font-size: large; /*環資主網域規定是19px*/
+    line-height:  38.4px;
+    letter-spacing: 0px;
+}
+
+
+/* blockquote*/
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after { 
+    content: close-quote;
+}
+
+blockquote::before,
+blockquote::after {
+    opacity: 0.25;
+    padding: 0 10px;
+}
+
+blockquote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #5ab267;
+    font-size: large;
+    color:#ffff;
+    font-weight: bold;
+}
+
+/* everything below is for demo appearances and not important to the concept */
+
+/* 以寧 */
+/*圖說設定*/
+.pic {
+    display: block;
+    color: #3C3C3C;
+    text-align: center;
+    font-size: 0.85em;
+    line-height: 1.4em;
+}
+
+
+/*BOX*/
+.boxtext{
+    color: #3C3C3C;
+    font-size: 0.85em;
+    line-height: 1.2em;
+}
+
+h3{
+    color: #222;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+
+h4{
+    color: #438850;
+    font-weight: bold;
+    opacity: 80%;
+    font-size: 130%;
+}
+
+
+h5{
+    color: #8F6B58;
+    font-size:1.2em;
+}
+
+
+
 /* 如嫻 */
 .text {
     color: #3C3C3C;
-    font-size: large;
     font-weight: 400;
-    line-height: 32px;
     text-align: justify;
+    font-family: FontAwesome;
 }
 
 .textp2 {
     color: #191e29;
-    font-size: large;
     font-weight: 400;
-    line-height: 32px;
     text-align: justify;
+    font-family: FontAwesome;
 }
 
 .text11 {
     color: beige;
-    font-size: large;
     font-weight: 400;
-    line-height: 32px;
     text-align: justify;
-
+    font-family: FontAwesome;
 }
 
-.ending {
-    color: #DCDCDC;
-    font-size: large;
-    line-height: 32px;
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 45%;
-}
+
 
 /* 如嫻 */
+
+section {
+    position: relative;
+}
 
 /* 開場字動畫 */
 /* h1 {
@@ -54,13 +126,15 @@
 }*/
 
 @keyframes typing {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 35ch;
-  }
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 35ch;
+    }
 }
+
 /* 開場字的動畫結束 */
 
 [class*="col-"] {
@@ -198,9 +272,10 @@
     color: white;
     padding: 2em;
 }
-    * {
-        text-shadow: 0 0 4vmin rgba(black, 0.25);
-    }
+
+* {
+    text-shadow: 0 0 4vmin rgba(black, 0.25);
+}
 
 
 .header {
@@ -218,7 +293,7 @@
     line-height: 32px;
     text-align: justify;
     color: white;
-    background-color: rgba(79,61,50,0.5);
+    background-color: rgba(79, 61, 50, 0.5);
 }
 
 
@@ -289,7 +364,14 @@
 
 /* footer */
 .footer {
-    background-color: #282628;
+    background-color: #438850;
     position: absolute;
     height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit;
     )
