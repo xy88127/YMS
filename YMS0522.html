@@ -32,14 +32,14 @@
 
     <!-- Opening影片 -->
     <section id="opening" >
-        <div class="embed-responsive embed-responsive-16by9; container-fluid">
+        <div style="position: sticky">
             <div style="width:auto; height: auto">
-                <video loop="false" autoplay="autoplay" muted="false" width=100vw height=50vh src="https://live.staticflickr.com/video/51190949341/40d5f6f2a2/720p.mp4?s=eyJpIjo1MTE5MDk0OTM0MSwiZSI6MTYyMTUwMjE1MCwicyI6IjA4Yjc4ZWM4MWVjMTJmYjY5NzRmMzAwYTZlZWExMjE1NGY3NWM3OTYiLCJ2IjoxfQ">
+                <video loop="false" autoplay="autoplay" muted="false" width="100%" height=auto src="https://live.staticflickr.com/video/51190949341/40d5f6f2a2/720p.mp4?s=eyJpIjo1MTE5MDk0OTM0MSwiZSI6MTYyMTUwMjE1MCwicyI6IjA4Yjc4ZWM4MWVjMTJmYjY5NzRmMzAwYTZlZWExMjE1NGY3NWM3OTYiLCJ2IjoxfQ">
                 </video>
                 <!--            <div style="width:100%; background-repeat: no-repeat;fixed; background-size:cover;background-position:center;position:relative;">-->
-                <div class="container-fluid;">
+               <!-- 安插主視覺照片的部分，直接放到影片上好了 <div>
                     <img src="assets/opening.png" style="width: 50vw; height:auto;margin-left:10%; margin-top: 27%">
-                </div>
+                </div> -->
             </div>
         </div>
         <!--        </div>-->
@@ -95,23 +95,23 @@
 
     <!------------------------- 20210506修文字而已 ------------------------>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-light" id="myNav" style="height: 30px;">
-        <div class="col-3 bg-light" id="menu01" style="height: 30px;" align="center">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-light" id="myNav" >
+        <div class="col-3 bg-light" id="menu01" align="center">
             <a href="#area01">
                 <font size=3>衝突類型</font>
             </a>
         </div>
-        <div class="col-3 bg-light" id="menu02" style="height: 30px;" align="center">
+        <div class="col-3 bg-light" id="menu02"  align="center">
             <a href="#area02">
                 <font size=3>問題成因</font>
             </a>
         </div>
-        <div class="col-3 bg-light" id="menu03" style="height: 30px;" align="center">
+        <div class="col-3 bg-light" id="menu03" align="center">
             <a href="#area03">
                 <font size=3>多重困境</font>
             </a>
         </div>
-        <div class="col-3 bg-light" id="menu04" style="height: 30px;" align="center">
+        <div class="col-3 bg-light" id="menu04" align="center">
             <a href="#area04">
                 <font size=3>可能解方</font>
             </a>
@@ -582,10 +582,10 @@
             //滾動事件
             $(document).scroll(() => {
                 let topNav = $("nav#myNav").offset().top;
-                let top01 = $("div#area01").offset().top;
-                let top02 = $("div#area02").offset().top;
-                let top03 = $("div#area03").offset().top;
-                let top04 = $("div#area04").offset().top;
+                let top01 = $("section#area01").offset().top;
+                let top02 = $("section#area02").offset().top;
+                let top03 = $("section#area03").offset().top;
+                let top04 = $("section#area04").offset().top;
 
                 //bg-XXX是顏色
 
