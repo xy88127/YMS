@@ -4550,7 +4550,7 @@ input[type=submit].btn-block {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
+    /*padding: .5rem 1rem*/
 }
 
 .navbar > .container,
@@ -7033,7 +7033,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #b6ca9c !important
+    background-color: #5ab267 !important
 }
 
 a.bg-primary:focus,
