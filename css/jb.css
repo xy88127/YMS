@@ -57,18 +57,31 @@ blockquote {
     line-height: 1.2em;
 }
 
-h3{
-    color: #222;
+h2{
+    font-size: 200%; 
+    letter-spacing: 0.4px;
+    line-height: 1.3333;
+    font-family:Microsoft JhengHei, sans-serif;
+    letter-spacing: 0.05em;
     font-weight: bold;
-    font-size: 200%;
+    color:#222;
+    
+}
+
+h3{
+    color: #4e403a;
+    font-size: 1.4em; 
+    font-family:"Microsoft JhengHei", sans-serif; 
+    font-weight: bold; 
+    line-height: 1.477;
+    
 }
 
 
 h4{
-    color: #438850;
+    font-size:25px;
     font-weight: bold;
-    opacity: 80%;
-    font-size: 130%;
+    color: #8F6B58;
 }
 
 
@@ -196,4 +209,162 @@ section {
     vertical-align: baseline;
     font: inherit;
     )
- 
+    
+/*隱藏動畫*/
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Tooltip- A CSS tooltip library*/
+
+.tooltip { position: relative; display: inline-block; font-family: 'Open Sans', sans-serif; }
+
+.tooltip:before, .tooltip:after {
+	position: absolute;
+	opacity: 0;
+	z-index: 1000000;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+	pointer-events: none;
+	border-radius:4px;
+}
+
+		
+.tooltip:hover:before, .tooltip:hover:after {
+	opacity: 1;
+}
+
+.tooltip:before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	border: 6px solid transparent;
+	position: absolute;
+	border-radius:0px;
+}
+		
+.tooltip:after {
+	content: attr(data-hint);
+	background: #333;
+	color: white;
+	padding: 8px 10px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+
+/* bottom */
+
+.tooltip-bottom:before {
+	top: 100%;
+	left: 50%;
+	margin: -14px 0 0 0;
+	border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+		
+.tooltip-bottom:after {
+	top: 100%;
+	left: 50%;
+	margin: -2px 0 0 -10px;
+}
+
+.tooltip-bottom:hover:before {
+	margin-top: -6px;
+}
+
+.tooltip-bottom:hover:after {
+	margin-top: 6px;
+}
+    
+
+    
+.bs-popover-auto[x-placement^=top] > .arrow::before,
+.bs-popover-top > .arrow::before {
+    bottom: 0;
+    border-width: .5rem .5rem 0;
+    border-top-color: rgba(0, 0, 0, .25)
+}
+
+.bs-popover-auto[x-placement^=top] > .arrow::after,
+.bs-popover-top > .arrow::after {
+    bottom: 1px;
+    border-width: .5rem .5rem 0;
+    border-top-color: #fff
+}
+
+.bs-popover-auto[x-placement^=right],
+.bs-popover-right {
+    margin-left: .5rem
+}
+
+.bs-popover-auto[x-placement^=right] > .arrow,
+.bs-popover-right > .arrow {
+    left: calc((.5rem + 1px) * -1);
+    width: .5rem;
+    height: 1rem;
+    margin: .3rem 0
+}
+
+.bs-popover-auto[x-placement^=right] > .arrow::before,
+.bs-popover-right > .arrow::before {
+    left: 0;
+    border-width: .5rem .5rem .5rem 0;
+    border-right-color: rgba(0, 0, 0, .25)
+}
+
+.bs-popover-auto[x-placement^=right] > .arrow::after,
+.bs-popover-right > .arrow::after {
+    left: 1px;
+    border-width: .5rem .5rem .5rem 0;
+    border-right-color: #fff
+}
+
+.bs-popover-auto[x-placement^=bottom],
+.bs-popover-bottom {
+    margin-top: .5rem
+}
+
+.bs-popover-auto[x-placement^=bottom] > .arrow,
+.bs-popover-bottom > .arrow {
+    top: calc((.5rem + 1px) * -1)
+}
+
+.bs-popover-auto[x-placement^=bottom] > .arrow::before,
+.bs-popover-bottom > .arrow::before {
+    top: 0;
+    border-width: 0 .5rem .5rem .5rem;
+    border-bottom-color: rgba(0, 0, 0, .25)
+}
+
+.bs-popover-auto[x-placement^=bottom] > .arrow::after,
+.bs-popover-bottom > .arrow::after {
+    top: 1px;
+    border-width: 0 .5rem .5rem .5rem;
+    border-bottom-color: #fff
+}
+
+.bs-popover-auto[x-placement^=bottom] .popover-header::before,
+.bs-popover-bottom .popover-header::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 1rem;
+    margin-left: -.5rem;
+    content: "";
+    border-bottom: 1px solid #f7f7f7
+}
