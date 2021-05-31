@@ -61,7 +61,7 @@ h2{
     font-size: 200%; 
     letter-spacing: 0.4px;
     line-height: 1.3333;
-    font-family:Microsoft JhengHei, sans-serif;
+    font-family: "ff-tisa-web-pro", "source-han-sans-traditional", sans-serif;
     letter-spacing: 0.05em;
     font-weight: bold;
     color:#222;
@@ -71,7 +71,7 @@ h2{
 h3{
     color: #4e403a;
     font-size: 1.4em; 
-    font-family:"Microsoft JhengHei", sans-serif; 
+    font-family: "ff-tisa-web-pro", "source-han-sans-traditional", sans-serif;
     font-weight: bold; 
     line-height: 1.477;
     
@@ -290,3 +290,62 @@ section {
 	margin-top: 6px;
 }
     
+/* for tables */
+        /* For mobile: */
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    ... .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    ... .col-m-12 {
+        width: 100%;
+    }
+}
