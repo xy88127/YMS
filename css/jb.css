@@ -94,24 +94,24 @@ h5{
 
 /* 如嫻 */
 .text {
-    color: #3C3C3C;
-    font-weight: 400;
+    color: rgb(74, 73, 73) ; 
+    font-weight: 400; 
     text-align: justify;
-    font-family: FontAwesome;
+    font-family:Microsoft JhengHei, sans-serif; 
 }
 
 .textp2 {
     color: #191e29;
     font-weight: 400;
     text-align: justify;
-    font-family: FontAwesome;
+    font-family:Microsoft JhengHei, sans-serif; 
 }
 
 .text11 {
     color:#fff;
     font-weight: 400;
     text-align: justify;
-    font-family: FontAwesome;
+    font-family:Microsoft JhengHei, sans-serif; 
 }
 
 
