@@ -1,21 +1,141 @@
 /*這是單行註解*/
 
 /*整體設定*/
-body{
-  font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
-  background: #f1f1f1;  /*環資主網域規定是 #eee*/
-    font-size: large; /*環資主網域規定是19px*/
-    line-height:  38.4px;
+body {
+    font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+    background: #f1f1f1;
+    /*環資主網域規定是 #eee*/
+    font-size: large;
+    /*環資主網域規定是19px*/
+    line-height: 38.4px;
     letter-spacing: 0px;
 }
 
+/* 影片test */
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.viewport-header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+    padding: 1rem;
+
+    p {
+        max-width: 600px;
+        margin: 1rem auto;
+    }
+}
+
+/* scroll down */
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 40px ;
+    height: 40px;
+    border: 2px solid #000000;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid #000;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+/*影片*/
+.video-bg {
+    /* Span the full grid */
+    grid-area: var(--fullGrid);
+
+    /* Re-size video to cover full screen while maintaining aspect ratio */
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+
+    /* Display video below overlay */
+    z-index: -1;
+}
+
+.video-bg::-webkit-media-controls {
+    display: none !important;
+}
 
 /* blockquote*/
 blockquote::before {
     content: open-quote;
 }
 
-blockquote::after { 
+blockquote::after {
     content: close-quote;
 }
 
@@ -33,7 +153,7 @@ blockquote {
     border-radius: 10px;
     /*background-color: #5ab267;*/
     font-size: large;
-    color:#ffff;
+    color: #ffff;
     font-weight: bold;
 }
 
@@ -51,67 +171,67 @@ blockquote {
 
 
 /*BOX*/
-.boxtext{
+.boxtext {
     color: #3C3C3C;
     font-size: 0.85em;
     line-height: 1.2em;
 }
 
-h2{
-    font-size: 200%; 
+h2 {
+    font-size: 200%;
     letter-spacing: 0.4px;
     line-height: 1.3333;
     font-family: "ff-tisa-web-pro", "source-han-sans-traditional", sans-serif;
     letter-spacing: 0.05em;
     font-weight: bold;
-    color:#222;
-    
+    color: #222;
+
 }
 
-h3{
+h3 {
     color: #438850;
-    font-size: 1.4em; 
+    font-size: 1.4em;
     font-family: "ff-tisa-web-pro", "source-han-sans-traditional", sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     line-height: 1.477;
-    
+
 }
 
 
-h4{
-    font-size:25px;
+h4 {
+    font-size: 25px;
     font-weight: bold;
     color: #8F6B58;
 }
 
 
-h5{
+h5 {
     color: #8F6B58;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
 
 
 /* 如嫻 */
 .text {
-    color: rgb(74, 73, 73) ; 
-    font-weight: 400; 
+    color: rgb(74, 73, 73);
+    font-weight: 400;
     text-align: justify;
-    font-family:Microsoft JhengHei, sans-serif; 
+    font-family: Microsoft JhengHei, sans-serif;
 }
 
 .textp2 {
     color: #191e29;
     font-weight: 400;
     text-align: justify;
-    font-family:Microsoft JhengHei, sans-serif; 
+    font-family: Microsoft JhengHei, sans-serif;
 }
 
 .text11 {
-    color:#fff;
+    color: #fff;
     font-weight: 400;
     text-align: justify;
-    font-family:Microsoft JhengHei, sans-serif; 
+    font-family: Microsoft JhengHei, sans-serif;
 }
 
 
@@ -209,84 +329,89 @@ section {
     vertical-align: baseline;
     font: inherit;
     )
-    
-/*隱藏動畫*/
+    /*隱藏動畫*/
     @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-/* Tooltip- A CSS tooltip library*/
+    /* Tooltip- A CSS tooltip library*/
 
-.tooltip { position: relative; display: inline-block; font-family: 'Open Sans', sans-serif; }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.tooltip:before, .tooltip:after {
-	position: absolute;
-	opacity: 0;
-	z-index: 1000000;
-	-webkit-transition: 0.3s ease;
-	-moz-transition: 0.3s ease;
-	transition: 0.3s ease;
-	pointer-events: none;
-	border-radius:4px;
-}
-
-		
-.tooltip:hover:before, .tooltip:hover:after {
-	opacity: 1;
-}
-
-.tooltip:before {
-	content: '';
-	position: absolute;
-	background: transparent;
-	border: 6px solid transparent;
-	position: absolute;
-	border-radius:0px;
-}
-		
-.tooltip:after {
-	content: attr(data-hint);
-	background: #333;
-	color: white;
-	padding: 8px 10px;
-	font-size: 12px;
-	white-space: nowrap;
-}
+    .tooltip:before,
+    .tooltip:after {
+        position: absolute;
+        opacity: 0;
+        z-index: 1000000;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        transition: 0.3s ease;
+        pointer-events: none;
+        border-radius: 4px;
+    }
 
 
-/* bottom */
+    .tooltip:hover:before,
+    .tooltip:hover:after {
+        opacity: 1;
+    }
 
-.tooltip-bottom:before {
-	top: 100%;
-	left: 50%;
-	margin: -14px 0 0 0;
-	border-bottom-color: rgba(0, 0, 0, 0.8);
-}
-		
-.tooltip-bottom:after {
-	top: 100%;
-	left: 50%;
-	margin: -2px 0 0 -10px;
-}
+    .tooltip:before {
+        content: '';
+        position: absolute;
+        background: transparent;
+        border: 6px solid transparent;
+        position: absolute;
+        border-radius: 0px;
+    }
 
-.tooltip-bottom:hover:before {
-	margin-top: -6px;
-}
+    .tooltip:after {
+        content: attr(data-hint);
+        background: #333;
+        color: white;
+        padding: 8px 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
 
-.tooltip-bottom:hover:after {
-	margin-top: 6px;
-}
-    
+
+    /* bottom */
+
+    .tooltip-bottom:before {
+        top: 100%;
+        left: 50%;
+        margin: -14px 0 0 0;
+        border-bottom-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .tooltip-bottom:after {
+        top: 100%;
+        left: 50%;
+        margin: -2px 0 0 -10px;
+    }
+
+    .tooltip-bottom:hover:before {
+        margin-top: -6px;
+    }
+
+    .tooltip-bottom:hover:after {
+        margin-top: 6px;
+    }
