@@ -41,7 +41,6 @@ video {
 }
 
 /* scroll down */
-
 *,
 :after,
 :before {
@@ -58,9 +57,8 @@ video {
 
 .scroll-down {
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 50%;
-    margin-left: -16px;
     display: block;
     width: 40px ;
     height: 40px;
@@ -75,7 +73,7 @@ video {
     transform: scale(1)
 }
 
-.scroll-down:before {
+/*.scroll-down:before {
     position: absolute;
     top: calc(50% - 8px);
     left: calc(50% - 6px);
@@ -86,7 +84,7 @@ video {
     content: "";
     border: 2px solid #000;
     border-width: 0px 0 2px 2px;
-}
+} */
 
 @keyframes bounce {
     0%,
