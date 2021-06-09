@@ -55,7 +55,7 @@ video {
     transition: all .5s ease-in 3s;
 }
 
-.scroll-down {
+/*.scroll-down {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -71,7 +71,7 @@ video {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     transform: scale(1)
-}
+} */
 
 /*.scroll-down:before {
     position: absolute;
